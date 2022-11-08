@@ -1,0 +1,19 @@
+body{
+    background-color: grey;
+}
+.contenitore{
+    background-color: rgb(73, 71, 69);
+    margin: auto;
+    width: 800px;
+    height: 700px;
+    border-radius: 5%;
+    overflow-y: hidden;
+}
+#email{
+    overflow-y: auto;
+    height: 100%;
+}
+.contenitoreBottone{
+    margin: auto;
+   
+}

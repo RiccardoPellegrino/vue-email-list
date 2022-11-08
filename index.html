@@ -15,16 +15,38 @@
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src='js/script.js' defer></script>
 
-    <title>Document</title>
+    <title>Vue Email</title>
 
 </head>
 
 <body>
-<div id="app">
+    <div id="app">
 
-    <h1>ciao</h1>
+        <h1 class="text-center text-warning">Vue Email</h1>
 
-</div>
+        <div class="contenitore mt-3">
 
+            <div id="email" class="d-flex flex-column align-items-center pt-2 text-white fs-2"
+                v-if="arrayEmail.length >= 10">
 
+                <div v-for="(email,index) in arrayEmail" :key="index">
+                    {{email}}
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="contenitoreBottone d-flex justify-content-center">
+
+            <button class="btn btn-secondary mt-5" @click="callApi"> Crea una email
+            </button>
+
+            <button class="btn btn-secondary mt-5 ms-5" @click="pulisciArray"> Rigenera Array
+            </button>
+
+        </div>
+
+    </div>
 </body>
+
